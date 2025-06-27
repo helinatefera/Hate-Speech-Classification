@@ -1,4 +1,3 @@
-````markdown
 # 💬 Hate Speech Classification (Logistic Regression)
 
 A simple Flask-based web application and API for classifying hate speech using a Logistic Regression model trained on TF-IDF features.
@@ -13,7 +12,6 @@ Clone the repository and install dependencies:
 pip install -r requirements.txt
 ````
 
----
 
 ## 🧠 Training the Model
 
