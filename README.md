@@ -9,7 +9,7 @@ A simple Flask-based web application and API for classifying hate speech using a
 Clone the repository and install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements/local.txt
 ````
 
 
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 To train the model on the preprocessed dataset:
 
 ```bash
-python train.py
+python3 train.py
 ```
 
 This will generate a `pipeline.joblib` file that includes both the TF-IDF vectorizer and the trained classifier.
@@ -27,10 +27,10 @@ This will generate a `pipeline.joblib` file that includes both the TF-IDF vector
 
 ## 🔍 Running Predictions
 
-Once the model is trained, you can test it using:
+Once the model is trained, you can test it using command below the write speech and enter:
 
 ```bash
-python predict.py "I love everyone!"
+python3 predict.py
 ```
 
 You will get a response like:
@@ -46,10 +46,8 @@ Positive (non-hate) (0.95 confidence)
 You can run the Flask app locally:
 
 ```bash
-python app.py
+python app/main_app.py
 ```
-
-Then open [http://localhost:5000](http://localhost:5000) in your browser.
 
 The app provides:
 
@@ -79,45 +77,14 @@ Content-Type: application/json
 }
 ```
 
----
 
-## 🚀 Deploy to Render
-
-1. Push this repo to GitHub
-2. Create a new **Web Service** on [Render](https://render.com/)
-3. Set **start command** to:
-
-```bash
-gunicorn app:app
-```
-
-4. That’s it. You’ll get a free live URL like:
+4. Live URL link:
 
 ```
 https://hate-speech-classifier.onrender.com
 ```
 
----
-
-## 📁 Project Structure
-
-```
-├── app.py               # Flask app
-├── train.py             # Model training script
-├── predict.py           # CLI predictor
-├── pipeline.joblib      # Saved model pipeline
-├── requirements.txt     # Dependencies
-├── templates/
-│   └── main.html        # UI template
-```
-
----
 
 ## 🧼 License
 
-MIT License © Your Name
-
-```
-
-Let me know if you want to replace `"Your Name"` with a real name or GitHub profile, or add badges/screenshots.
-```
+MIT License © helinatefera
