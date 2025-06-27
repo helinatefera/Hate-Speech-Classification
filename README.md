@@ -1,5 +1,3 @@
-Here is your `README.md` written in proper **Markdown format**, ready to be copied directly:
-
 ````markdown
 # 💬 Hate Speech Classification (Logistic Regression)
 
