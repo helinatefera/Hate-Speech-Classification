@@ -1,14 +1,17 @@
 [tool.poetry]
-name = "solar-farm-insight"
+name = "HSD"
 version = "0.1.0"
-description = "A solar farm insight project. 10Academy Week Zero Challenge"
+description = "Hate Speech Detection"
 authors = ["Helina Tefera <helinatefera1212@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 loguru = "0.7.3"
 pandas = "2.2.3"
-numpy = "2.1.3"
+joblib=1.4.2
+flask=3.1.1
+scikit-learn=1.5.2
+numpy=1.26.4
 matplotlib = "3.9.3"
 seaborn = "0.13.2"
 statsmodels = "0.14.4"
