@@ -12,6 +12,9 @@ class HateSpeechDataset:
         os.makedirs(self.target_dir, exist_ok=True)
 
     def download(self):
+        if os.path.exists(self.local_path):
+            print("Dataset already exists at", self.local_path)
+            return self
         raw_path = kagglehub.dataset_download(self.dataset_id)
         source_file = os.path.join(raw_path, self.filename)
         shutil.copy2(source_file, self.local_path)

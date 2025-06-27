@@ -1,6 +1,5 @@
 from .hate_speech import HateSpeechDataset
 from scripts.preprocess import preprocess_text
-import pandas as pd
 
 def load_clean_dataset():
     dataset = HateSpeechDataset().download().load()
@@ -10,3 +9,5 @@ def load_clean_dataset():
     df = df.dropna(subset=["Content", "Label"])
     print(f"Dataset loaded with {len(df)} entries.")
     return df
+
+# load_clean_dataset()
