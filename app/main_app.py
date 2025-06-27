@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import joblib
 
 app = Flask(__name__)
-pipeline = joblib.load("./pipeline.joblib")
+pipeline = joblib.load("app/pipeline.joblib")
 classes = ["Positive (non-hate)", "Negative (hate)"]
 
 @app.route("/", methods=["GET", "POST"])
