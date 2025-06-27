@@ -46,7 +46,7 @@ Positive (non-hate) (0.95 confidence)
 You can run the Flask app locally:
 
 ```bash
-python app.py
+python app/main_app.py
 ```
 
 The app provides:
