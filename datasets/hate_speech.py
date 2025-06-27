@@ -1,11 +1,15 @@
-import kagglehub
-import shutil
 import os
+import shutil
+
+import kagglehub
 import pandas as pd
+
 
 class HateSpeechDataset:
     def __init__(self, target_dir="data"):
-        self.dataset_id = "waalbannyantudre/hate-speech-detection-curated-dataset"
+        self.dataset_id = (
+            "waalbannyantudre/hate-speech-detection-curated-dataset"
+        )
         self.filename = "HateSpeechDatasetBalanced.csv"
         self.target_dir = target_dir
         self.local_path = os.path.join(target_dir, self.filename)
@@ -26,6 +30,7 @@ class HateSpeechDataset:
 
     def get_dataframe(self):
         if not hasattr(self, "df"):
-            raise ValueError("Dataset not loaded. Call download().load() first.")
+            raise ValueError(
+                "Dataset not loaded. Call download().load() first."
+            )
         return self.df
-
