@@ -25,3 +25,4 @@ class HateSpeechDataset:
         if not hasattr(self, "df"):
             raise ValueError("Dataset not loaded. Call download().load() first.")
         return self.df
+
