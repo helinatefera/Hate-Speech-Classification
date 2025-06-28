@@ -1,6 +1,6 @@
 -r tests.txt
 
 black==25.1.0
-isort=6.0.1
+isort==6.0.1
 pre_commit==4.0.1
 pylint==3.3.2
