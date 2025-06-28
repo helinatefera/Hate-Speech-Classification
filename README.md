@@ -53,7 +53,7 @@ This will generate a `pipeline.joblib` file that includes both the TF-IDF vector
 Once the model is trained, you can test it using:
 
 ```bash
-python3 predict.py This is not hate
+python3 predict.py
 ```
 
 You will get a response like:
