@@ -6,6 +6,8 @@
 
 A simple Flask-based web application and API for classifying hate speech using a Logistic Regression model trained on TF-IDF vectorization.
 
+![Live](img/live.png)
+
 ## 📦 Requirements
 
 - [**Python 3.10+**](https://www.python.org/downloads/release/python-3100/)
