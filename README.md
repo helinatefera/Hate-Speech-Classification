@@ -1,10 +1,30 @@
-# 💬 Hate Speech Classification (Logistic Regression)
 
-A simple Flask-based web application and API for classifying hate speech using a Logistic Regression model trained on TF-IDF features.
+# **💬 Hate Speech Classification (Logistic Regression)**
+
+[![Live Site](https://img.shields.io/badge/Live%20🔥-https%3A%2F%2Fhate--speech--detection.helinatefera.com-green?style=for-the-badge&logo=flask)](https://hate-speech-detection.helinatefera.com/)
+
+
+A simple Flask-based web application and API for classifying hate speech using a Logistic Regression model trained on TF-IDF vectorization.
+
+## 📦 Requirements
+
+- [**Python 3.10+**](https://www.python.org/downloads/release/python-3100/)
+- [**Docker**](https://www.docker.com/) (optional, if deploying via container)
 
 ---
 
-## ⚙️ Installation
+## 🚀 Running the Project
+
+### 📁 Clone the Repository
+
+Clone using SSH:
+
+```bash
+git clone git@github.com:helinatefera/Hate-Speech-Classification.git
+cd Hate-Speech-Classification
+```
+
+### ⚙️ Installation (Local)
 
 Clone the repository and install dependencies:
 
@@ -12,6 +32,7 @@ Clone the repository and install dependencies:
 pip install -r requirements/local.txt
 ````
 
+---
 
 ## 🧠 Training the Model
 
@@ -25,12 +46,12 @@ This will generate a `pipeline.joblib` file that includes both the TF-IDF vector
 
 ---
 
-## 🔍 Running Predictions
+### 🔍 Running Predictions (CLI)
 
-Once the model is trained, you can test it using command below the write speech and enter:
+Once the model is trained, you can test it using:
 
 ```bash
-python3 predict.py
+python3 predict.py This is not hate
 ```
 
 You will get a response like:
@@ -41,9 +62,9 @@ Positive (non-hate) (0.95 confidence)
 
 ---
 
-## 🌐 Web App & API (Render Ready)
+### 🌐 Web App & API
 
-You can run the Flask app locally:
+Run the Flask app:
 
 ```bash
 python app/main_app.py
@@ -51,10 +72,28 @@ python app/main_app.py
 
 The app provides:
 
-* ✅ A simple web form
-* ✅ A live prediction result
-* ✅ A dynamic API link preview
-* ✅ A public JSON API endpoint
+---
+
+## 🐳 Docker Support
+
+### Build the Docker image:
+
+```bash
+docker build -t hate-speech-app .
+```
+
+### Run the container:
+
+```bash
+docker run -d -p 8000:5000 hate-speech-app
+```
+
+Then visit:
+
+```
+http://localhost:8000
+```
+
 
 ---
 
@@ -77,14 +116,15 @@ Content-Type: application/json
 }
 ```
 
-
-4. Live URL link:
-
-```
-https://hate-speech-classifier.onrender.com
-```
-
+---
 
 ## 🧼 License
 
 MIT License © helinatefera
+
+
+## 📞 Contact
+
+👤 **Helina Tefera**  
+✉️ [E-Mail](mailto:helinatefera1212@gmail.com)  
+📱 [Phone](tel:+251929453545)

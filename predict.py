@@ -1,6 +1,6 @@
 import joblib
 
-pipeline = joblib.load("pipeline.joblib")
+pipeline = joblib.load("app/pipeline.joblib")
 text = input("Enter text: ")
 prob = pipeline.predict_proba([text])[0]
 label = pipeline.predict([text])[0]

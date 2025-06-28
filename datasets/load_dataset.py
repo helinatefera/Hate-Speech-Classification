@@ -12,5 +12,3 @@ def load_clean_dataset():
     print(f"Dataset loaded with {len(df)} entries.")
     return df
 
-
-# load_clean_dataset()
