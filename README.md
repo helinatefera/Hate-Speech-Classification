@@ -12,7 +12,7 @@ A simple Flask-based web application and API for classifying hate speech using a
 
 - [**Python 3.10+**](https://www.python.org/downloads/release/python-3100/)
 - [**Docker**](https://www.docker.com/) (optional, if deploying via container)
-
+- [**Dataset**](https://www.kaggle.com/datasets/waalbannyantudre/hate-speech-detection-curated-dataset)
 ---
 
 ## 🚀 Running the Project
